@@ -1,0 +1,74 @@
+html, body {
+	background-color: #FCFCFC;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+#current-location h1 {
+	color: #F2F5EA;
+}
+
+#location {
+	width: 45%;
+	line-height: 30px;
+	border-radius: 20px;
+	border: 0;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 0 20px;
+}
+
+#search-form {
+	background-color: #EEE;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#weatherbtn {
+	height: 20px; 
+	background-color: rgba(0,0,0,.06);
+	padding: 8px;
+	border-radius: 5px;
+	cursor: default;
+}
+
+#weatherbtn:hover {
+	background-color: rgba(0,0,0,.1);
+}
+
+.label {
+	font-weight: bold;
+}
+
+.current-details {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #F9F9F9;
+}
+
+.details {
+	display: inline-block;
+	margin: 0 10px;
+	line-height: 45px;
+}
+
+#current {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+#hourly-summary {
+	font-size: 18px;
+}
