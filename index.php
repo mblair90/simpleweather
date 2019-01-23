@@ -1,3 +1,7 @@
+<?php 
+	// config.php stores the API keys, hidden from Github via gitignore
+	include 'includes/config.php';
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,6 +50,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="includes/scripts.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApYWN4wZW9RjPVDMBWNJYpGSMV4t4wAyc&libraries=places&callback=activatePlacesSearch"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<?php echo $google_key; ?>&libraries=places&callback=activatePlacesSearch"></script>
 </body>
 </html>
