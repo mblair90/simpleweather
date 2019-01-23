@@ -9,8 +9,10 @@
 
 	<div class="container">
 		<div id="search-form">
-			<input type="text" name="location" id="location" placeholder="Enter location...">
-			<input type="image" id="weatherbtn" name="submit" src="includes/img/search.png" alt="Search">
+			<form id="my-form">
+				<input type="text" id="location" placeholder="Enter location...">
+				<input type="image" id="weatherbtn" src="includes/img/search.png" alt="Search">
+			</form>
 		</div>
 	</div>
 
@@ -37,6 +39,9 @@
 			<span id="hourly-summary"></span>
 		</div>
 	</div>
+
+
+	<div id="loading"><img src="includes/img/eclipse.gif"></div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

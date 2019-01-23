@@ -33,11 +33,21 @@ function activatePlacesSearch() {
 // What to be done when the page loads
 $(document).ready(function() {
 
-	// Event handler for when the search button is clicked
-	$('#weatherbtn').click(function() {
+	// Event handler for when search form is submitted
+	$('#my-form').submit(function(e) {
+		// Prevent form from submitting and redirecting page
+		e.preventDefault();
 		// Set the entered address to a variable
 		var location = $('#location').val();
 		currentWeather(location);
+	})
+
+	// Ajax event shows loading spinner
+	$(document).ajaxStart(function() {
+		$('#loading').css('display', 'flex');
+	});
+	$(document).ajaxComplete(function() {
+		$('#loading').css('display', 'none');
 	});
 
 });
