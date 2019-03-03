@@ -8,6 +8,7 @@
 	<title>Simple Weather</title>
 	<link rel="stylesheet" type="text/css" href="includes/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -42,6 +43,10 @@
 		<div>
 			<span id="hourly-summary"></span>
 		</div>
+	</div>
+
+	<div id="blurb" class="container">
+		<p>This is a simple app to retrieve the current weather anywhere on Earth. The form uses the Google Places API to suggest autocompletions as the user types. When the form is submitted, an AJAX request is sent to a php file which retrieves the latitutde and longitude of the user entry via Google's API, then uses that information to make an API call to Darksky. </p>
 	</div>
 
 
