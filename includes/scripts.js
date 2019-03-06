@@ -20,6 +20,11 @@ function currentWeather(location) {
 		$('#uv-index').html(uv_index);
 		$('#current').html(temperature + "°F " + summary);
 		$('#hourly-summary').html(hourly_summary);
+
+		// Use vanilla JS to grab icon ID and set the inner HTML to an image tag w/
+		// appropriate image path
+		var icon = document.getElementById('current-icon');
+		icon.innerHTML = '<img src="includes/img/icons/' + data.currently.icon + '.png">';
 	});
 }
 
@@ -39,7 +44,10 @@ $(document).ready(function() {
 		e.preventDefault();
 		// Set the entered address to a variable
 		var location = $('#location').val();
-		currentWeather(location);
+		// If location is not empty, run currentWeather function
+		if (location ) {
+			currentWeather(location);
+		}
 	})
 
 	// Ajax event shows loading spinner

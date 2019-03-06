@@ -38,7 +38,7 @@
 
 	<div class="container">
 		<div>
-			<span id="current"></span>
+			<div id="current-icon"></div><div id="current"></div>
 		</div>
 		<div>
 			<span id="hourly-summary"></span>
