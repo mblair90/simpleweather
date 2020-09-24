@@ -2,6 +2,7 @@
 	// config.php stores the API keys, hidden from Github via gitignore
 	include 'includes/config.php';
  ?>
+ 
 <!DOCTYPE html>
 <html>
 <head>
