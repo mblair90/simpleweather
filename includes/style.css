@@ -92,15 +92,14 @@ html, body {
 }
 
 #blurb {
-	position: absolute;
-    bottom: 50%;
     font-weight: bold;
-    padding: 0 5%;
+    margin-top: 5rem;
+    max-width: 800px;
 }
 
 /* Media Queries */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 849px) {
 	#blurb {
-		bottom: 30%;
+		margin: 5rem;
 	}
 }
